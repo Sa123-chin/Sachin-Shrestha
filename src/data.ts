@@ -1,5 +1,7 @@
-import { PersonalInfo, StatItem, ExperienceItem, SkillCategory, EducationItem, TestimonialItem, HelpItem } from "./types";
+import { PersonalInfo, StatItem, ExperienceItem, SkillCategory, EducationItem, TestimonialItem, HelpItem, ProjectItem } from "./types";
 import sachinAvatar from "./assets/images/sachin_avatar_permanent.png";
+import taxCalcThumbnail from "./assets/images/nepal_tax_calc_mockup_1790654474409.jpg";
+import aiCopilotThumbnail from "./assets/images/ai_talent_copilot_mockup_1790654487743.jpg";
 
 export const personalInfo: PersonalInfo = {
   name: "Sachin Shrestha",
@@ -250,4 +252,49 @@ export const helpItems: HelpItem[] = [
     description: "Structured workflows catch and resolve issues quickly, not later."
   }
 ];
+
+export const projects: ProjectItem[] = [
+  {
+    id: "nepal-tax-calculator",
+    title: "Nepal Personal Income Tax & TDS Forecast Calculator (FY 2083/84)",
+    summary: "An IRD-compliant progressive payroll tax calculator, 12-month rolling TDS simulator, and audit-ready worksheet generator for salaried and individual taxpayers in Nepal.",
+    description: "A fiscal and payroll tax system modeled on the Income Tax Act, 2058 (with FY 2083/84 Finance Act amendments). It supports full-year filers and mid-year joiners (pro-rata), statutory exemptions (CIT, SSF, EPF, Life/Health/Building Insurance, Remote Area Allowances A-E), the 1% social security levy exemption for SSF contributors, and month-by-month TDS schedules. It also compares Individual vs. Married slabs and exports a 2-page audit-grade PDF.",
+    keyFeatures: [
+      "Progressive tax engine (1%, 10%, 20%, 30%, 36%, 39% slabs) with Individual/Married toggle",
+      "Statutory deductions and credits (SSF, CIT, EPF caps, insurance limits, Female, Medical, Foreign and Incapacitated tax credits, Remote Area concessions)",
+      "Editable 12-month Bikram Sambat ledger (Shrawan to Ashad) with IRD horizontal template",
+      "Unmarried vs. Married scenario comparison with marginal/effective rates and slab charts",
+      "Audit-ready PDF export (portrait worksheet plus landscape 12-month TDS schedule)",
+      "Nepali (Lakhs/Crores) and International number formats, with one-click presets"
+    ],
+    tags: ["Fintech", "Payroll", "Tax", "Nepal"],
+    role: "Solo developer",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "PDF Generation", "Fintech Engine"],
+    liveUrl: "https://nepal-personal-income-tax-calculator-506321761975.asia-southeast1.run.app",
+    githubUrl: "https://github.com/sthsachin017",
+    thumbnail: taxCalcThumbnail,
+    gallery: [taxCalcThumbnail]
+  },
+  {
+    id: "ai-talent-copilot",
+    title: "AI Talent Acquisition Screening & Interview Copilot",
+    summary: "An SOP-driven recruitment copilot that analyzes resumes against job descriptions, enforces company core values, flags risks, and generates interview scripts and executive briefings.",
+    description: "A platform for TA teams and hiring managers that replaces slow, bias-prone resume screening with a strict SOP. It parses the CV, JD and core values, separates Must-Haves from Nice-to-Haves, produces a calibrated 0-100 match score with red-flag detection, and gives an advance/reject recommendation with evidence. For advancing candidates it generates phone screening scripts; for rejected candidates it drafts empathetic rejection emails.",
+    keyFeatures: [
+      "AI screening and 0-100 scoring with verbatim CV evidence and red-flag detection (gaps, job-hopping, relocation)",
+      "Executive dossier and hiring manager memo with competency matrix, tenure/stability index, and core values alignment",
+      "Dual-mode phone scripts: 60-second knockout and full 15-minute SOP interview board with a live checklist",
+      "60-second executive briefing in four 15-second windows, with in-browser text-to-speech (1x, 1.25x, 1.5x)",
+      "Multi-role requisition management, screening history, clipboard export, and one-click rejection emails"
+    ],
+    tags: ["AI", "Recruitment", "HR Tech", "Productivity"],
+    role: "Solo developer",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "Gemini API", "Web Speech API"],
+    liveUrl: "https://candidate-screening.ai.studio",
+    githubUrl: "https://github.com/sthsachin017",
+    thumbnail: aiCopilotThumbnail,
+    gallery: [aiCopilotThumbnail]
+  }
+];
+
 

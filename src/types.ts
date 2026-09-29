@@ -50,3 +50,19 @@ export interface HelpItem {
   description: string;
 }
 
+export interface ProjectItem {
+  id: string;
+  title: string;
+  summary: string;
+  description: string;
+  keyFeatures: string[];
+  tags: string[];
+  role: string;
+  techStack: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  thumbnail: string;
+  gallery?: string[];
+}
+
+

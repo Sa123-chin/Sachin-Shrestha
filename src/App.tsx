@@ -6,37 +6,24 @@ import HowIHelp from "./components/HowIHelp";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import EmailOptionsModal, { triggerEmailModal } from "./components/EmailOptionsModal";
+import NetworkBackground from "./components/NetworkBackground";
 import { personalInfo } from "./data";
-import darkBg from "./assets/images/dark_abstract_bg_1784296516872.jpg";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#030712] text-slate-100 font-sans antialiased selection:bg-teal-400 selection:text-slate-950 relative overflow-hidden">
-      {/* Background Wallpaper & Glow Layer */}
-      <div className="fixed inset-0 z-0 pointer-events-none select-none">
-        {/* Abstract generated wallpaper */}
-        <img
-          src={darkBg}
-          alt="Dark Abstract Wallpaper"
-          className="w-full h-full object-cover opacity-10 mix-blend-screen"
-          referrerPolicy="no-referrer"
-        />
-        {/* Subtle mesh overlay and gradients */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#020617] via-[#090d1a]/95 to-[#020617]/98" />
-        
-        {/* Glow Effects */}
-        {/* Obsidian Blue ambient bubble */}
-        <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full bg-blue-500/10 blur-[140px]" />
-        {/* Midnight Indigo ambient bubble */}
-        <div className="absolute bottom-[20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-indigo-500/10 blur-[130px]" />
-        {/* Digital Violet glow in the corner */}
-        <div className="absolute top-[10%] right-[-5%] w-[40%] h-[40%] rounded-full bg-violet-600/15 blur-[120px]" />
-        {/* Ambient deep obsidian tint */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(2,4,16,0.85))]" />
-      </div>
+    <div className="min-h-screen bg-[#070b18] text-slate-100 font-sans antialiased selection:bg-teal-400 selection:text-slate-950 relative overflow-hidden">
+      {/* 
+        Continuously moving animated background: 
+        Dark navy (#070b18) canvas with slowly drifting white-cyan dots 
+        connecting with semi-transparent light-blue lines (plexus/network).
+        Fixed behind all content (z-index: -1, pointer-events: none), 
+        fully covered and hidden behind #about section.
+      */}
+      <NetworkBackground />
 
       <div className="relative z-10">
         {/* Responsive Navigation */}
@@ -55,6 +42,9 @@ export default function App() {
 
           {/* Chronological Work Experience timeline */}
           <Experience />
+
+          {/* Featured Technical Projects & Innovations */}
+          <Projects />
 
           {/* Multi-Country Payroll, Systems, and HR competencies */}
           <Skills />
