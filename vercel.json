@@ -1,0 +1,9 @@
+{
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.[\\w]+$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

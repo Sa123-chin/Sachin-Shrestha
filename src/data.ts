@@ -6,10 +6,10 @@ export const personalInfo: PersonalInfo = {
   location: "Kathmandu, Bagmati, Nepal",
   email: "sthsachin018@gmail.com",
   phone: "+977-9843766018",
-  headline: "HR & People Operations Lead | Multi-Country Payroll (NP, HK, SG, AUS) | HRIS & Compliance",
+  headline: "HR Professional & People Operations Lead | Multi-Country Payroll (NP, HK, SG, AUS) | HRIS & Compliance",
   subheadline: "Turning HR chaos into systems that scale — 80% fewer manual errors, 100% audit-ready compliance, across 4 countries.",
   bioParagraphs: [
-    "I turn HR chaos into systems that scale.",
+    "I am an HR professional dedicated to turning HR chaos into systems that scale.",
     "Over 4+ years, I've built compliance frameworks, payroll systems, and people operations across four countries — Nepal, Hong Kong, Singapore, and Australia — while managing HRIS, onboarding, and performance systems for growing teams.",
     "I specialize in end-to-end people operations: multi-country payroll, HR compliance, HRIS management, and performance systems that keep managers and employees aligned across time zones and regulatory environments. Open to conversations about international HR operations, people systems, or workforce planning — feel free to connect."
   ],
