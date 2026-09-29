@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #070b18;
+  color: #e6ebf5;
+  overflow-x: hidden;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

@@ -72,8 +72,8 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative z-[1] bg-[#070b18] py-16 sm:py-20 border-b border-[#1c2a44]"
-      style={{ position: "relative", zIndex: 1, backgroundColor: "#070b18" }}
+      className="relative z-20 bg-[#070b18] py-16 sm:py-20 border-b border-[#1c2a44]"
+      style={{ position: "relative", zIndex: 20, backgroundColor: "#070b18" }}
     >
       {/* 60px fade at the top edge (transparent to #070b18) so the transition from background animation is seamless */}
       <div

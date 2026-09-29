@@ -15,13 +15,12 @@ import { personalInfo } from "./data";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#070b18] text-slate-100 font-sans antialiased selection:bg-teal-400 selection:text-slate-950 relative overflow-hidden">
+    <div className="min-h-screen bg-transparent text-slate-100 font-sans antialiased selection:bg-teal-400 selection:text-slate-950 relative overflow-hidden">
       {/* 
-        Continuously moving animated background: 
-        Dark navy (#070b18) canvas with slowly drifting white-cyan dots 
-        connecting with semi-transparent light-blue lines (plexus/network).
-        Fixed behind all content (z-index: -1, pointer-events: none), 
-        fully covered and hidden behind #about section.
+        Continuously moving connected network background: 
+        Dark radial gradient background with slowly drifting connected dots.
+        Fixed behind all content (z-index: 0, pointer-events: none),
+        and cleanly concealed behind the solid #about section.
       */}
       <NetworkBackground />
 
